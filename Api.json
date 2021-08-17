@@ -1,0 +1,851 @@
+{
+	"info": {
+		"_postman_id": "9a720430-efae-409f-90d4-c42e84009628",
+		"name": "superDamp_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Product All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/products",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/products/:id",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product/Jackets/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/products/Jackets/",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"products",
+								"Jackets",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products/Pants/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/products/Pants/",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"products",
+								"Pants",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product/T-Shirts/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/products/T-Shirts/",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"products",
+								"T-Shirts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product/Hoodies/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/products/Hoodies/",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"products",
+								"Hoodies",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"new Product\",\r\n    \"imgURL\": \"newProduct.jpg\",\r\n    \"price\":0 ,\r\n    \"stock\":0,\r\n    \"category\":\"T-Shirts\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/products/",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/products/:id",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"updatedName\",\r\n    \"imgURL\": \"updatedUrl\",\r\n    \"price\":0 ,\r\n    \"stock\":0,\r\n    \"category\":\"Pants\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/products/:id",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"adminpassword\"\r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/users/login",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"your name\",\r\n    \"email\":\"yourEmail@humber.ca\",\r\n    \"password\":\"yourPassword\"\r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/users/register",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MTA5ZTk2Y2NiZTVhZjAwMzVhOTgzZDciLCJyb2xlIjoidXNlciIsIm5hbWUiOiJub2RlIiwiaWF0IjoxNjI4MDM5NzE3LCJleHAiOjE2MjgwNDA5MTd9.FXsWNsJbG8Av7q4cQrkmU34sg8DMo-SLegMWRGnRXfo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"new name\",\r\n    \"email\":\"newEmail@humber.ca\",\r\n    \"password\":\"new Password\"\r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/users/reset",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"users",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/comments",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comments/product/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/comments/product/:id",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"comments",
+								"product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comments/user/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/Comments/user/:id",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Comments",
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comments",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": \"60fce73de4e0646a6475f626\",\r\n    \"comments\": {\r\n        \"rating\": 4,\r\n        \"recommended\": true,\r\n        \"comment\": \"I loved the product\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/comments",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comments",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/comments/:id",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"comments",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comments",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": \"60fce73de4e0646a6475f626\",\r\n    \"comments\": {\r\n        \"rating\": 4,\r\n        \"recommended\": true,\r\n        \"comment\": \"I loved the product\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/comments/:id",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"comments",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carts",
+			"item": [
+				{
+					"name": "All Carts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MTA5ZTk2Y2NiZTVhZjAwMzVhOTgzZDciLCJyb2xlIjoidXNlciIsIm5hbWUiOiJub2RlIiwiaWF0IjoxNjI4MDM5NzE3LCJleHAiOjE2MjgwNDA5MTd9.FXsWNsJbG8Av7q4cQrkmU34sg8DMo-SLegMWRGnRXfo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/carts",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MyCart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MTA5ZTk2Y2NiZTVhZjAwMzVhOTgzZDciLCJyb2xlIjoidXNlciIsIm5hbWUiOiJub2RlIiwiaWF0IjoxNjI4MDM5NzE3LCJleHAiOjE2MjgwNDA5MTd9.FXsWNsJbG8Av7q4cQrkmU34sg8DMo-SLegMWRGnRXfo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/carts/myCart",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"carts",
+								"myCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MyCart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/Carts",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MyCart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MTA5ZTk2Y2NiZTVhZjAwMzVhOTgzZDciLCJyb2xlIjoidXNlciIsIm5hbWUiOiJub2RlIiwiaWF0IjoxNjI4MDM5NzE3LCJleHAiOjE2MjgwNDA5MTd9.FXsWNsJbG8Av7q4cQrkmU34sg8DMo-SLegMWRGnRXfo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/carts/myCart",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"carts",
+								"myCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MyCart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MTA5ZTk2Y2NiZTVhZjAwMzVhOTgzZDciLCJyb2xlIjoidXNlciIsIm5hbWUiOiJub2RlIiwiaWF0IjoxNjI4MDM5NzE3LCJleHAiOjE2MjgwNDA5MTd9.FXsWNsJbG8Av7q4cQrkmU34sg8DMo-SLegMWRGnRXfo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGZkY2ZmMzU1Y2NiNjM5M2M1YzNjNDciLCJyb2xlIjoiNjM3MjQzMzNjOGY5ZGNjODJmYmM4MGJkNGQwODVmMzUzZDM1NzA4ZTBlMDJhNjUyZDNiZWM5NzQwYTQwMTI5ZGQ3YTJhNTBhMTE4ZDc5NGE1OGIxMDE0ZjdmMGY3ZDFlNWE3MDlhNDg4MjU4NTdlNzJhYjQzZjA2YzcxYWM3ZmIiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjgxMjYyODMsImV4cCI6MTYyODEyNzQ4M30.1aa7e5AYQGPAeqjKzOdqRaw-B0oiR_Th9UQw_-Jyfk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": [\r\n        {\r\n            \"_id\": \"60fce73de4e0646a6475f626\",\r\n            \"name\": \"Hawaiian Box Fit Shirt\",\r\n            \"imgURL\": \"https://image1.superdry.com/static/images/optimised/upload9223368955665861804.jpg\",\r\n            \"quantity\": 2\r\n        }\r\n        ]\r\n}"
+						},
+						"url": {
+							"raw": "https://superdamp.azurewebsites.net/api/carts/myCart",
+							"protocol": "https",
+							"host": [
+								"superdamp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"carts",
+								"myCart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
